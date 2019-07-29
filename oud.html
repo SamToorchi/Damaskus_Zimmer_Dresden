@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Apple -->     
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="index,follow" name="robots" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <link href="images/logo1.jpg" rel="apple-touch-icon" />
+        <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+        <script src="js/functions.js"></script>
+
+        <!-- /Apple -->       
+        <title>
+            Tabelle
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <link href="css/animation.css" rel="stylesheet" />
+
+        <!-- Player -->
+        <link href="css/player.css" rel="stylesheet" />
+        <link href="css/animation.css" rel="stylesheet" />
+
+
+        <script>
+            $(document).ready(function() {
+                $('.tap-target').tapTarget('open');
+                $('.tap-target').tapTarget('close');
+
+                $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 240
+                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                });
+
+                $('.red').click(function(){
+                    setTimeout(function(){
+                        window.location="intro.html"}, 1);
+                });
+
+                $('.green').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.blue').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.fehler').click(function(){
+                    setTimeout(function(){
+                        window.location="fehler.html"}, 1);
+                });
+
+                $('.left').click(function(){
+                    setTimeout(function(){
+                        window.location="close.html"}, 1);
+                });
+
+                $('.tar').click(function(){
+                    setTimeout(function(){
+                        window.location="tar.html"}, 1);
+                });
+
+                $('.oud').click(function(){
+                    setTimeout(function(){
+                        window.location="oud.html"}, 1);
+                });
+
+                $('.daf').click(function(){
+                    setTimeout(function(){
+                        window.location="daf.html"}, 1);
+                });
+
+                $('.more').click(function(){
+                    setTimeout(function(){
+                        window.location="more.html"}, 1);
+                });
+
+                /*
+                $('.teal').click(function(){
+                    setTimeout(function(){
+                        window.location="playlist.html"}, 1);
+                });
+                */
+
+
+                $('.collapsible').collapsible();
+                $('.carousel').carousel();
+
+                $("#anieins").delay(1500).fadeIn(1500);
+                $("#anieins").delay(3000).fadeOut(500); 
+                $("#anizwei").delay(6000).fadeIn(500);
+                $("#anizwei").delay(2000).fadeOut(500);
+                $("#anidrei").delay(8000).fadeIn(500);
+           
+
+            });
+        </script>
+
+        <style>
+            table {
+                width: 100%;
+            }
+            td{
+                height: 50px;
+            }
+        </style>
+
+
+    </head>
+
+    <nav>
+        <div class="nav-wrapper" style="background: #f3d178;">
+            <a id="anieins" class="brand-logo center" style="font-family: 'Julius Sans One', sans-serif; display: none;">wählen sie die Kategorien aus</a>
+            <a id="anizwei" class="brand-logo center" style="font-family: 'Julius Sans One', sans-serif; display: none;">Damaskus</a>
+            <a id="anidrei" class="brand-logo center" style="font-family: 'Julius Sans One', sans-serif; display: none;">eine Reise durch die Musik</a>
+            <a class="brand-logo left"><i class="large material-icons">cancel</i></a>
+            <!--
+<ul class="right hide-on-med-and-down">
+<li class="tar"><a>Tar</a></li>
+<li class="oud"><a>Oud</a></li>
+<li class="active daf"><a>Daf</a></li>
+<li class="more"><a>Übersetzung</a></li>
+</ul>
+-->
+        </div>
+    </nav>
+
+    <body bgcolor="#2c283f" >
+
+        <!-- SideNav -->        
+        <ul id="slide-out" class="side-nav">
+            <li><div class="user-view">
+                <div class="background">
+                    <img src="images/design.jpg" width="400" height="200">
+                </div>
+                <a ><img class="circle" src="images/face.png"></a>
+                <a ><span class="white-text name">Sam Toorchi</span></a>
+                <a ><span class="white-text email">kommtnochk@mail.com</span></a>
+                </div></li>
+            <li><a class="fehler" style="cursor: pointer;"><i class="material-icons waves-effect">bug_report</i>Fehler melden</a></li>
+        </ul>
+        <!-- /SideNav -->
+
+        <!-- Grid -->
+
+        <table border="0" height="5" style="width: 100%; height: 90%; border-color: white; table-layout: fixed !IMPORTANT; overflow-y: hidden;">
+            <tr>
+
+                <td style="width: 33,33%; height: 45%;" valign="top">
+                    <div class="card" style="height: 100%; padding-bottom: 1% !important;">
+                        <div class="activator card-image waves-effect waves-block waves-light">
+                            <img height="70%" width="20%" class="activator" src="images/Oud.gif" />
+                        </div>
+                        <div class="card-content" style="padding-top: 6%; margin-bottom: 0 !IMPORTANT;">
+                            <span style="font-family: 'Julius Sans One', sans-serif;" class="card-title activator grey-text text-darken-4"> Klang <audio controls style="width: 5px; padding-left: 55%; margin-top: 0; margin-right: 0; position: relative;"><source src="music/oud.m4a" type="audio/mpeg"></audio></span>
+
+                        </div>
+
+                        
+
+                    </div>
+
+
+                </td>
+
+                <td style="width: 33,33%; height: 45%;" valign="top">
+                    <div class="card" style="height: 100%; padding-bottom: 1% !important;">
+                        <div class=" activator waves-effect waves-block waves-light" style="font-family: 'Julius Sans One', sans-serif;  text-align: center; font-size: 70; padding-top: 25%; padding-bottom: 25%;">
+                            Herkunft
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4" style="font-family: 'Julius Sans One', sans-serif; ">Herkunft<i class="material-icons right">close</i></span>
+                            <p style="line-height: 1.8; font-family: 'Julius Sans One', sans-serif; ">Mit dem Aufkommen und Wachstum des Islam reiste dieses echte iranische Musikinstrument um die Welt und wird nun von China bis nach Italien benutzt.</p>
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width: 33,33%; height: 45%;" valign="top">
+                    <div class="card" style="height: 100%; padding-bottom: 1% !important;">
+                        <div class=" activator waves-effect waves-block waves-light" style="font-family: 'Julius Sans One', sans-serif;  text-align: center; font-size: 70; padding-top: 25%; padding-bottom: 25%;">
+                            Form
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4" style="font-family: 'Julius Sans One', sans-serif; ">Form<i class="material-icons right">close</i></span>
+                            <div style="line-height: 1.8; font-family: 'Julius Sans One', sans-serif; ">
+                                <ol style="list-style-type: circle;">
+                                    <li>Körper aus Walnuss, Ahorn, Palisander und vielen anderen Holzarten</li>
+                                    <li>Neck und Wirbelkasten meist aus Walnussholz</li>
+                                    <li>Resonanzboden aus Fichte oder Rotzeder</li>
+                                    <li>Stimmwirbel aus Ebenholz oder Palisander</li>
+                                    <li>Brücke aus Nussbaum, Ebenholz oder Palisander</li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+
+
+
+
+
+            </tr>
+
+
+            <tr>
+                <td style="width: 33,33%; height: 45%;" valign="top">
+                    <div class="card" style="height: 100%; padding-bottom: 1% !important;">
+                        <div class=" activator waves-effect waves-block waves-light" style="font-family: 'Julius Sans One', sans-serif;  text-align: center; font-size: 70; padding-top: 25%; padding-bottom: 25%;">
+                            Körper
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4" style="font-family: 'Julius Sans One', sans-serif; ">Körper<i class="material-icons right">close</i></span>
+                            <p style="line-height: 1.8; font-family: 'Julius Sans One', sans-serif; ">Die Schale ist sehr groß und birnenförmig. Es hat einen extrem kurzen Griff, so dass die Schnüre hauptsächlich entlang seiner Schüssel verlaufen. Es hat 10 Schnüre oder fünf Schnurpaare und wird mit einem Plektrum gespielt. Eine Hühner- oder Pfauenfeder dient als Plektrum. <!-- Der Körper ist aus Walnuss, Ahorn, Palisander und / oder vielen anderen Holzarten. --></p>
+                        </div>
+                    </div>
+                </td>
+                <td style="width: 33,33%; height: 45%;" valign="top">
+                    <div class="card" style="height: 100%;  padding-bottom: 1% !important;">
+
+                        <div class=" activator waves-effect waves-block waves-light" style="font-family: 'Julius Sans One', sans-serif;  text-align: center; font-size: 70; padding-top: 25%; padding-bottom: 25%;">
+                            Griffbrett
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4" style="font-family: 'Julius Sans One', sans-serif; ">Griffbrett<i class="material-icons right">close</i></span>
+                            <p style="line-height: 1.8; font-family: 'Julius Sans One', sans-serif; ">Griffbrett aus Nussbaum, Ebenholz oder Palisander</p>
+                        </div>
+
+
+                    </div>
+                </td>
+                <td style="width: 33,33%; height: 45%;" valign="top">
+                    <div class="card" style="height: 100%;  padding-bottom: 1% !important;">
+
+                        <div class=" waves-effect waves-block waves-light" style="font-family: 'Julius Sans One', sans-serif;  text-align: center; font-size: 70; padding-top: 25%; padding-bottom: 25%;">
+                            mehr...
+                        </div>
+
+
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <script src="js/main.js"></script>
+    </body >
+</html>
+

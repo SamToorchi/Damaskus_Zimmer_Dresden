@@ -1,0 +1,601 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Apple -->     
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="index,follow" name="robots" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <link href="images/logo1.jpg" rel="apple-touch-icon" />
+        <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+        <script src="js/functions.js"></script>
+        <!-- /Apple -->       
+        <title>
+            Eine Reise durch die Musik
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <link href="css/animation.css" rel="stylesheet" />
+
+        <script>
+            $(document).ready(function() {
+                $('.tap-target').tapTarget('open');
+                $('.tap-target').tapTarget('close');
+
+                $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 240
+                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                });
+
+                $('.red').click(function(){
+                    setTimeout(function(){
+                        window.location="intro.html"}, 1);
+                });
+
+                $('.green').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.blue').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.fehler').click(function(){
+                    setTimeout(function(){
+                        window.location="fehler.html"}, 1);
+                });
+
+                $('.left').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.teal').click(function(){
+                    setTimeout(function(){
+                        window.location="playlist.html"}, 1);
+                });
+
+                $('.tar').click(function(){
+                    setTimeout(function(){
+                        window.location="tar.html"}, 1);
+                });
+
+                $('.oud').click(function(){
+                    setTimeout(function(){
+                        window.location="oud.html"}, 1);
+                });
+
+                $('.daf').click(function(){
+                    setTimeout(function(){
+                        window.location="daf.html"}, 1);
+                });
+
+                $('.more').click(function(){
+                    setTimeout(function(){
+                        window.location="more.html"}, 1);
+                });
+
+
+
+                /*
+                setTimeout(function() {
+                    window.location.href = "./playlist.html";
+                }, 180000);
+                */
+
+
+                $("#firstcard").delay(27000).fadeIn(1500);
+                $("#firstcard").delay(2000).fadeOut(1000);
+
+                $("#secondcard").delay(42000).fadeIn(1500);
+                $("#secondcard").delay(2000).fadeOut(1000);
+
+                $("#thirdcard").delay(54000).fadeIn(1500);
+                $("#thirdcard").delay(2000).fadeOut(1000);
+
+                $("#fourthcard").delay(157000).fadeIn(1500);
+
+
+
+                $("#firstlist").delay(31000).fadeIn(1500);
+                $("#secondlist").delay(46000).fadeIn(1500);
+                $("#thirdlist").delay(58000).fadeIn(1500);
+                $("#fourthlist").delay(158000).fadeIn(1500);
+
+                /** Wiederholungen **/
+                $("#secondlist").delay(20000).fadeOut(500);
+                $("#secondlist").delay(0).fadeIn(500);
+
+                $("#firstlist").delay(57000).fadeOut(500);
+                $("#firstlist").delay(0).fadeIn(500);
+
+
+                /** Übersetzungen **/
+                $("#ubereins").delay(22750).fadeIn(1500);
+                $("#uberzwei").delay(45000).fadeIn(1500);
+                $("#ubereins").delay(32250).fadeOut(1500); 
+                $("#uberzwei").delay(10000).fadeOut(1500);
+
+                $("#uberdrei").delay(59500).fadeIn(1500);
+                $("#ubervier").delay(67500).fadeIn(1500);
+                $("#uberdrei").delay(26000).fadeOut(1500);
+                $("#ubervier").delay(18000).fadeOut(1500);
+
+                $("#uberfunf").delay(115000).fadeIn(1500);
+                $("#ubersechs").delay(123000).fadeIn(1500);
+                $("#uberfunf").delay(11000).fadeOut(500);
+                $("#ubersechs").delay(3000).fadeOut(500);
+
+                $("#ubersieben").delay(129000).fadeIn(1500);
+                $("#uberacht").delay(133000).fadeIn(1500);
+                $("#ubersieben").delay(13000).fadeOut(300);
+                $("#uberacht").delay(9000).fadeOut(200);
+
+                $("#uberelf").delay(143700).fadeIn(1500);
+                $("#uberelf").delay(3000).fadeOut(500);
+                $("#uberneun").delay(151000).fadeIn(1500);     
+                $("#uberzehn").delay(155000).fadeIn(1500);
+
+
+
+            });
+        </script>
+
+
+    </head>
+    <nav>
+        <div class="nav-wrapper" style="background: #f3d178;">
+            <a class="brand-logo center" style="font-family: 'Julius Sans One', sans-serif;">eure Reise durch die Musik</a>
+            <a class="brand-logo left"><i class="large material-icons">cancel</i></a>
+            <!--
+<ul class="right hide-on-med-and-down">
+<li class="tar"><a>Tar</a></li>
+<li class="oud"><a>Oud</a></li>
+<li class="active daf"><a>Daf</a></li>
+<li class="more"><a>Übersetzung</a></li>
+</ul>
+-->
+        </div>
+    </nav>
+
+
+    <body bgcolor="#2c283f">
+
+        <!-- SideNav -->        
+        <ul id="slide-out" class="side-nav">
+            <li><div class="user-view">
+                <div class="background">
+                    <img src="images/design.jpg" width="400" height="200">
+                </div>
+                <a ><img class="circle" src="images/face.png"></a>
+                <a ><span class="white-text name">Sam Toorchi</span></a>
+                <a ><span class="white-text email">kommtnoch@mail.com</span></a>
+                </div></li>
+            <li><a class="fehler" style="cursor: pointer;"><i class="material-icons waves-effect">bug_report</i>Fehler melden</a></li>
+        </ul>
+        <!-- /SideNav -->
+
+
+
+
+        <div class="row">
+            <div class="col s3 m3 l3" style="font-family: 'Julius Sans One', sans-serif;">
+
+                <ul class="collection" style="border-color: #2c283f;">
+                    <div id="firstlist" style="display: none;" >
+                        <li  class="collection-item avatar " >
+                            <img src="images/instrument4 Kopie 2.bmp" alt="" class="large circle responsive-img">
+                            <span class="title"> <b>&nbsp;</b></span>
+                            <p><b>Tar</b></p>
+
+                            <a  class="secondary-content tar"><i style="color:#2c283f; " class="medium material-icons ">more_horiz</i></a>
+
+                        </li>
+                    </div>
+
+                    <div id="secondlist" style="display: none;" >
+                        <li  class="collection-item avatar " >
+                            <img src="images/instrument5.jpg" alt="" class="large circle responsive-img">
+                            <span class="title"> <b>&nbsp;</b></span>
+                            <p><b>Oud</b></p>
+
+                            <a  class="secondary-content oud"><i style="color:#2c283f; " class="medium material-icons ">more_horiz</i></a>
+
+                        </li>
+                    </div>
+                    <div id="thirdlist" style="display: none;" >
+                        <li class="collection-item avatar " >
+                            <img src="images/instrument6.png" alt="" class="large circle responsive-img">
+                            <span class="title"><b>&nbsp;</b></span>
+                            <p><b>Daf</b></p>
+                            <a class="secondary-content daf"><i style="color:#2c283f; " class="medium material-icons  ">more_horiz</i></a>
+                        </li>
+                    </div>
+                    <!--
+<div id="fourthlist" style="display: none;" >
+<li class="collection-item avatar " >
+
+<img src="images/logo1.jpg" alt="" class="large circle responsive-img">
+<span class="title"> <b>jetzt mehr Fakten</b></span>
+<p><b>zum Gesang</b> <br>
+
+</p>
+
+<a class="secondary-content more"><i style="color:#2c283f; " class="medium material-icons  ">more_horiz</i></a>
+</li>
+</div>
+-->
+                </ul>
+
+
+
+            </div>
+            <div class="col s6 m6 l6">
+
+                <div class="card">
+                    <div class="card-image">
+                        <div class="video-container">
+
+                            <!-- Alternative: https://www.aparat.com/v/X5Pzm/ویدیو_موزیک_زیبای_عربی_با_کمانچه_و_تار_و_عود -->
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/b9incy16TVY?autoplay=1&controls=0&fs=0&showinfo=0" fs="0" controls="0" autoplay="1" frameborder="0" showinfo="0" ></iframe>
+
+
+                        </div>
+                        <!--   <span class="card-title">Hier beginnt eure Reise durch die Musik</span> -->
+
+                        <!-- <a class="btn-floating halfway-fab waves-effect waves-light more"><i class="material-icons">translate</i></a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col s3 m3 l3">
+
+                <div class="row" style="text-align: center;">
+
+                    <!-- Beginn  -->
+
+
+
+                    <ul class="collection" style="border-color: #2c283f;">
+                        <div id="ubereins" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    با من صنما دل یک دله کن
+                                    <br>
+                                    Baa man sanamaa del yek-dele kon
+                                    <br>
+                                    With me o beloved one* , share your heart 
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="uberzwei" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    گر سر ننهم وانگه گله کن
+                                    <br>
+                                    gar sar nanaham vaangah gele kon
+                                    <br>
+                                    complain me if i didn't lay my life down
+                                </span>
+                            </div>
+                        </div>
+                        <div id="uberdrei" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    ای مطرب دل زان نغمه خوش
+                                    <br>
+                                    Ey motrebe del Zaan naghmeye khosh
+                                    <br>
+                                    O singer of the heart , with that pleasant song
+                                </span>
+                            </div>
+                        </div>
+                        <div id="ubervier" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    این مغز مرا پرمشغله کن
+                                    <br>
+                                    in maghze maraa por mashghale kon
+                                    <br>
+                                    fill (this) my mind
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="uberfunf" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    سی پاره به کف در چله شدی
+                                    <br>
+                                    si-paare be kaf dar chelle shodi
+                                    <br>
+                                    with thirty Parted * in your hand you went to "Cheleh"*
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="ubersechs" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    سی پاره منم ترک چله کن
+                                    <br>
+                                    si paare manam tarke chele kon
+                                    <br>
+                                    i am thirty Parts , leave the forty
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="ubersieben" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    با من صنما دل یک دله کن
+                                    <br>
+                                    Baa man sanamaa del yek-dele kon
+                                    <br>
+                                    With me o beloved one* , share your heart 
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="uberacht" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    گر سر ننهم وانگه گله کن
+                                    <br>
+                                    gar sar nanaham vaangah gele kon
+                                    <br>
+                                    complain me if i didn't lay my life down
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="uberneun" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    گر سر ننهم وانگه گله کن
+                                    <br>
+                                    gar sar nanaham vaangah gele kon
+                                    <br>
+                                    complain me if i didn't lay my life down
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="uberzehn" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    با من صنما دل یک دله کن
+                                    <br>
+                                    Baa man sanamaa del yek-dele kon
+                                    <br>
+                                    With me o beloved one* , share your heart 
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="uberelf" style="display: none;" >
+                            <div class="card-panel white">
+                                <span class="">
+                                    با من صنما دل یک دله کن
+                                    <br>
+                                    Baa man sanamaa del yek-dele kon
+                                    <br>
+                                    With me o beloved one* , share your heart 
+                                </span>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div> 
+                <!-- ENDE -->
+
+
+
+            </div>
+
+        </div> 
+
+
+        <!-- Double -->
+        <div id="firstcard" style="display: none; font-family: 'Julius Sans One', sans-serif;" >
+            <div class="row" >
+                <div class="col s4 m4 l4"><p><!-- leer --></p></div>
+                <div class="col s4 m4 l4">
+
+                    <!-- ***INHALT*** -->
+
+
+                    <div class="card horizontal" >
+                        <div class="card-image">
+                            <img src="images/instrument4.bmp" width="75" height="150">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p style="font-size: 40; padding-top: 10%; padding-left: 30%;">Tar</p>
+                            </div>
+
+
+                            <div class="card-action center">
+                                <a class="tar">mehr dazu</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <br>
+
+
+
+                </div>
+                <div class="col s4 m4 l4"><p><!-- leer --></p></div> 
+            </div>
+        </div>
+        <!-- Double -->
+
+        <!-- Double -->
+        <div id="secondcard" style="display: none; font-family: 'Julius Sans One', sans-serif;" >
+            <div class="row" >
+                <div class="col s4 m4 l4"><p><!-- leer --></p></div>
+                <div class="col s4 m4 l4">
+
+                    <!-- ***INHALT*** -->
+
+
+                    <div class="card horizontal" >
+                        <div class="card-image">
+                            <img src="images/instrument5.jpg" width="75" height="150">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p style="font-size: 40; padding-top: 10%; padding-left: 30%; ">Oud</p>
+                            </div>
+
+
+                            <div class="card-action center">
+                                <a class="oud">mehr dazu</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <br>
+
+
+
+                </div>
+                <div class="col s4 m4 l4"><p><!-- leer --></p></div> 
+            </div>
+        </div>
+        <!-- Double -->
+
+        <!-- Double -->
+        <div id="thirdcard" style="display: none; font-family: 'Julius Sans One', sans-serif;" >
+            <div class="row" >
+                <div class="col s4 m4 l4"><p><!-- leer --></p></div>
+                <div class="col s4 m4 l4">
+
+                    <!-- ***INHALT*** -->
+
+
+                    <div class="card horizontal" >
+                        <div class="card-image">
+                            <img src="images/instrument6.png" width="75" height="150">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p style="font-size: 40; padding-top: 10%; padding-left: 30%; " >Daf</p>
+                            </div>
+
+
+                            <div class="card-action center">
+                                <a class="daf">mehr dazu</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <br>
+
+
+
+                </div>
+                <div class="col s4 m4 l4"><p><!-- leer --></p></div> 
+            </div>
+        </div>
+
+        <div id="fourthcard" style="display: none; font-family: 'Julius Sans One', sans-serif;" >
+            <div class="row" >
+                <div class="col s4 m4 l4"><p><!-- leer --></p></div>
+                <div class="col s4 m4 l4">
+
+                    <!-- ***INHALT*** -->
+
+
+                    <div class="card horizontal" >
+                        <div class="card-image">
+                            <img src="images/testi.jpg" width="75" height="150">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p style="font-size: 30; padding-top: 10%; padding-left: 30%; text-align: center;" >mehr Fakten zum Gesang</p>
+                            </div>
+
+
+                            <div class="card-action center">
+                                <a class="more">mehr dazu</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <br>
+
+
+
+                </div>
+                <div class="col s4 m4 l4"><p><!-- leer --></p></div> 
+            </div>
+        </div>
+        <!-- Double -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- MENU 
+<div class="fixed-action-btn horizontal click-to-toggle">
+<a id="menu" class="btn-floating btn-large">
+<i class="material-icons" style="background: #f3d178;">menu</i>
+</a>
+<ul>
+<li><a class="btn-floating red" ><i class="material-icons">home</i></a></li>
+<li><a class="btn-floating green" ><i class="material-icons">arrow_left</i></a></li>
+<li><a class="btn-floating yellow darken-1 btn button-collapse" data-activates="slide-out"><i class="material-icons">perm_identity</i></a>    </li>
+<li><a class="btn-floating blue" ><i class="material-icons">clear</i></a></li>
+</ul>
+</div>
+<div class="tap-target" data-activates="menu" materialize [materializeActions]="tapTargetActions">
+<div class="tap-target-content">
+<h5>Title</h5>
+<p>A bunch of text</p>
+</div>
+</div>
+/MENU --> 
+    </body >
+</html>

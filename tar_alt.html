@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Apple -->     
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="index,follow" name="robots" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <link href="images/logo1.jpg" rel="apple-touch-icon" />
+        <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+        <script src="js/functions.js"></script>
+
+        <!-- /Apple -->       
+        <title>
+            Tar
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <link href="css/animation.css" rel="stylesheet" />
+
+        <!-- Player -->
+        <link href="css/player.css" rel="stylesheet" />
+        <link href="css/animation.css" rel="stylesheet" />
+
+
+        <script>
+            $(document).ready(function() {
+                $('.tap-target').tapTarget('open');
+                $('.tap-target').tapTarget('close');
+
+                $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 240
+                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                });
+
+                $('.red').click(function(){
+                    setTimeout(function(){
+                        window.location="intro.html"}, 1);
+                });
+
+                $('.green').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.blue').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.fehler').click(function(){
+                    setTimeout(function(){
+                        window.location="fehler.html"}, 1);
+                });
+
+                $('.left').click(function(){
+                    setTimeout(function(){
+                        window.location="close.html"}, 1);
+                });
+
+                $('.tar').click(function(){
+                    setTimeout(function(){
+                        window.location="tar.html"}, 1);
+                });
+
+                $('.oud').click(function(){
+                    setTimeout(function(){
+                        window.location="oud.html"}, 1);
+                });
+
+                $('.daf').click(function(){
+                    setTimeout(function(){
+                        window.location="daf.html"}, 1);
+                });
+
+                $('.more').click(function(){
+                    setTimeout(function(){
+                        window.location="more.html"}, 1);
+                });
+
+                /*
+                $('.teal').click(function(){
+                    setTimeout(function(){
+                        window.location="playlist.html"}, 1);
+                });
+                */
+
+
+                $('.collapsible').collapsible();
+                $('.carousel').carousel();
+
+
+
+
+
+
+            });
+        </script>
+
+        <style>
+            table {
+                width: 100%;
+            }
+            td{
+                height: 50px;
+            }
+        </style>
+
+
+    </head>
+
+    <nav>
+        <div class="nav-wrapper" style="background: #f3d178;">
+            <a class="brand-logo center" style="font-family: 'Julius Sans One', sans-serif;">Damaskus - eine Reise durch die Musik</a>
+            <a class="brand-logo left"><i class="large material-icons">cancel</i></a>
+            <!--
+<ul class="right hide-on-med-and-down">
+<li class="tar"><a>Tar</a></li>
+<li class="oud"><a>Oud</a></li>
+<li class="active daf"><a>Daf</a></li>
+<li class="more"><a>Übersetzung</a></li>
+</ul>
+-->
+        </div>
+    </nav>
+
+    <body bgcolor="#2c283f" >
+
+        <!-- SideNav -->        
+        <ul id="slide-out" class="side-nav">
+            <li><div class="user-view">
+                <div class="background">
+                    <img src="images/design.jpg" width="400" height="200">
+                </div>
+                <a ><img class="circle" src="images/face.png"></a>
+                <a ><span class="white-text name">Sam Toorchi</span></a>
+                <a ><span class="white-text email">kommtnochk@mail.com</span></a>
+                </div></li>
+            <li><a class="fehler" style="cursor: pointer;"><i class="material-icons waves-effect">bug_report</i>Fehler melden</a></li>
+        </ul>
+        <!-- /SideNav -->
+
+        <!-- Grid -->
+
+        <table border="2" height="5" style="width: 100%; border-color: white; table-layout: fixed; overflow: hidden;">
+            <tr>
+
+                <td style="" height="10" style="width: 30,333%;" valign="top">
+
+
+                    <div class="card" style="height: 100%;">
+                        <div class=" activator card-image waves-effect waves-block waves-light" >
+                            <img  width="30%" height="30%" class="activator" src="images/dasneuetar.png" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"> Klang <audio controls="controls" style="width: 5px; padding-left: 60%; margin-top: 0; margin-right: 0; position: relative;"><source src="music/1.mp3" type="audio/mpeg"></audio></span>
+
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Jetzt anhören<i class="material-icons right">close</i></span>
+
+                        </div>
+                    </div>
+
+
+
+                </td>
+                <td style="width: 33,33%;" valign="top">
+                    <div class="card" style="height: 100%;">
+                        <div class=" activator card-image waves-effect waves-block waves-light" style="font-family: 'Julius Sans One', sans-serif; font-size: 70; text-align: center; padding: center; padding-top: 50%; padding-bottom: 50%;">
+                            Form
+                            <!--
+<img width="30%" height="22.5%" class="activator" src="images/tar_eins.jpg" />
+-->
+                        </div>
+                        <!--
+<div class="card-content">
+<span class="card-title activator grey-text text-darken-4">Form<i class="material-icons right">more_vert</i></span> 
+
+</div>
+-->
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Form<i class="material-icons right">close</i></span>
+                            <p style="line-height: 1.8;">Die Iraner betrachten Tar als "Sultan der Instrumente". Seine heutige Form wurde im 18. Jahrhundert entwickelt und ist seither die Wahl der persischen klassischen Meister.</p>
+                        </div>
+                    </div>
+
+                </td>
+
+
+
+
+                <td  rowspan="2" style="width: 40%;" valign="top">
+                    <ul class="collapsible" data-collapsible="accordion" style="background-color: white;">
+                        <li>
+                            <div class="collapsible-header active"><i class="material-icons">home</i>Herkunft</div>
+                            <div class="collapsible-body"><span style="line-height: 1.8;">Die Iraner betrachten Tar als "Sultan der Instrumente". Seine heutige Form wurde im 18. Jahrhundert entwickelt und ist seither die Wahl der persischen klassischen Meister.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">build</i>Aufbau</div>
+                            <div class="collapsible-body">
+                                <div class="dieseliste">
+                                    <ul style="line-height: 1.8;">
+                                        <li><b style="font-size:20;">-</b> Körper kann aus Walnuss oder Maulbeere hergestellt werden</li>
+                                        <li><b style="font-size:20;">-</b> Hals aus Walnussholz</li>
+                                        <li><b style="font-size:20;">-</b> Griffbrett aus zwei Kamelknochenreihen und dazwischen eine Reihe von Arekanussholz</li>
+                                        <li ><b style="font-size:20;">-</b> Stimmwirbel aus Walnussholz</li>
+                                        <li><b style="font-size:20;">-</b> Resonanzboden aus Lammfell</li>
+                                    </ul>
+                                </div>
+                                <!-- 
+Es hat einen doppelschüsseligen Körper aus Maulbeer- oder Walnussholz mit einem Lammfell-Gesicht. Das Griffbrett hat 28 Bünde und die drei Doppelsaiten werden mit einem Plektrum aus Messing und Waben gespielt.
+-->
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">music_note</i>Klang</div>
+                            <div class="collapsible-body"><span style="line-height: 1.8;">  Es hat drei Reihen von doppelten "singenden" Saiten (jedes Paar ist einstimmig gestimmt: die ersten zwei Gänge in reinem Stahl, der dritte in gewickeltem Kupfer), die in Quarten (C, G, C) und einem "fliegenden" Bass gestimmt sind Saite (in Kupfer gewickelt und in G gestimmt (eine Oktave tiefer als der singende Mittelweg), die außerhalb des Griffbretts verläuft und über eine Verlängerung der Nuss läuft.  </span></div>
+                        </li>
+                    </ul>
+                </td>
+
+            </tr>
+
+
+            <tr>
+                <td valign="top"><div class="col s4">
+                    <div class="card">
+                        <div class=" activator card-image waves-effect waves-block waves-light" style="font-family: 'Julius Sans One', sans-serif; font-size: 70; text-align: center; padding: center; padding-top: 20%; padding-bottom: 20%;">
+                            Rückseite
+                            <!--
+<img width="30%" height="22.5%" class="activator" src="images/tar_eins.jpg" />
+-->
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Rückseite<i class="material-icons right">more_vert</i></span>
+
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Rückseite<i class="material-icons right">close</i></span>
+                            <p style="line-height: 1.8;">Körper kann aus Walnuss oder Maulbeere hergestellt werden</p>
+                        </div>
+                    </div>
+                    </div></td>
+                <td valign="top"><div class="col s4">
+                    <div class="card">
+                        <div class=" activator card-image waves-effect waves-block waves-light" style="font-family: 'Julius Sans One', sans-serif; font-size: 70; text-align: center; padding: center; padding-top: 20%; padding-bottom: 20%;">
+                            Griffbrett
+                            <!--
+<img width="30%" height="22.5%" class="activator" src="images/tar_eins.jpg" />
+-->
+                        </div>
+                        <!--
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Griffbrett<i class="material-icons right">more_vert</i></span>
+
+                        </div>
+-->
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Griffbrett<i class="material-icons right">close</i></span>
+                            <p style="line-height: 1.8;">Griffbrett aus zwei Kamelknochenreihen und dazwischen eine Reihe &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; von Arekanussholz</p>
+                        </div>
+                    </div>
+                    </div></td>
+
+            </tr>
+
+
+
+        </table>
+
+
+
+        <!-- /Grid -->
+
+        <!-- MENU --> 
+        <!--
+<div class="fixed-action-btn horizontal click-to-toggle">
+<a id="menu" class="btn-floating btn-large">
+<i class="material-icons" style="background: #f3d178;">menu</i>
+</a>
+<ul>
+<li><a class="btn-floating red" ><i class="material-icons">home</i></a></li>
+<li><a class="btn-floating green" ><i class="material-icons">arrow_left</i></a></li>
+<li><a class="btn-floating yellow darken-1 btn button-collapse" data-activates="slide-out"><i class="material-icons">perm_identity</i></a>    </li>
+<li><a class="btn-floating blue" ><i class="material-icons">clear</i></a></li>
+</ul>
+</div>
+<div class="tap-target" data-activates="menu" materialize [materializeActions]="tapTargetActions">
+<div class="tap-target-content">
+<h5>Title</h5>
+<p>A bunch of text</p>
+</div>
+</div>
+-->
+        <script src="js/main.js"></script>
+    </body >
+</html>

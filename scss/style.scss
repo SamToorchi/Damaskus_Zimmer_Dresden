@@ -1,0 +1,138 @@
+@import "compass";
+
+@function rem($px, $base: 16px) {
+    @return ($px / $base) * 1rem;
+}
+
+@function em($px, $base: 16px) {
+    @return ($px / $base) * 1em;
+}
+
+@mixin setInCenter($width, $height) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: $width;
+  height: $height;
+
+  margin-top: -($height/2);
+  margin-left: -($width/2);
+  
+  @content;
+}
+
+body {
+  background: #2c283f;
+  
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  
+  width: 100%;
+  margin-top: -130px;
+  
+  text-align: center;
+  
+  h1 {
+    font-size: 31px;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    pointer-events: none;
+    letter-spacing: 1px;
+  }
+
+  h1 strong {
+    font-weight: 700;
+    color: #f3d178;
+  }
+
+  p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: rem(100px);
+    height: rem(80px);
+    margin-top: rem(0px);
+    margin-left: rem(-50px);
+
+    font-size: rem(16px);
+
+    cursor: pointer;
+
+    > .circle {
+        position: relative;
+
+        width: em(34px);
+        height: em(34px);
+        margin: auto;
+    }
+
+    > .circle > .icon {
+        position: absolute;
+        z-index: 5;
+        @include setInCenter(em(12px), em(14px));
+        display: none;
+        margin-left: -0.29em;
+    }
+
+    > .circle > .black {
+        z-index: 4;
+        @include setInCenter(62px, 62px);
+
+        opacity: 0.9;
+    }
+
+    > .circle > .yellow {
+        position: absolute;
+        z-index: 3;
+        @include setInCenter(48px, 48px);
+    }
+
+    > .circle > .border {
+        position: absolute;
+        z-index: 2;
+        @include setInCenter(72px, 72px);
+    }
+
+    > .circle > .white {
+        position: absolute;
+        z-index: 2;
+        @include setInCenter(120px, 120px);
+        
+        opacity: 0.1;
+    }
+
+    > .circle > .lines {
+        position: absolute;
+
+        display: none;
+    }
+
+    > .text {
+        position: relative;
+
+        margin-top: em(38px);
+
+        font-size: em(12px);
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

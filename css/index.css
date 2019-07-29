@@ -1,0 +1,121 @@
+body {
+  background: #2c283f;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -130px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 31px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  pointer-events: none;
+  letter-spacing: 1px;
+}
+.header h1 strong {
+  font-weight: 700;
+  color: #f3d178;
+}
+.header p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6.25rem;
+  height: 5rem;
+  margin-top: 0rem;
+  margin-left: -3.125rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.play-button > .circle {
+  position: relative;
+  width: 2.125em;
+  height: 2.125em;
+  margin: auto;
+}
+.play-button > .circle > .icon {
+  position: absolute;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.75em;
+  height: 0.875em;
+  margin-top: -0.4375em;
+  margin-left: -0.375em;
+  display: none;
+  margin-left: -0.29em;
+}
+.play-button > .circle > .black {
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-top: -31px;
+  margin-left: -31px;
+  opacity: 0.9;
+}
+.play-button > .circle > .yellow {
+  position: absolute;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: -24px;
+  margin-left: -24px;
+}
+.play-button > .circle > .border {
+  position: absolute;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  margin-top: -36px;
+  margin-left: -36px;
+}
+.play-button > .circle > .white {
+  position: absolute;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-left: -60px;
+  opacity: 0.1;
+}
+.play-button > .circle > .lines {
+  position: absolute;
+  display: none;
+}
+.play-button > .text {
+  position: relative;
+  margin-top: 2.375em;
+  font-size: 0.75em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}

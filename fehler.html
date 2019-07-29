@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="language"  content="Deutsch" />
+        <!-- Apple -->     
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="index,follow" name="robots" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <link href="images/logo1.jpg" rel="apple-touch-icon" />
+        <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+        <script src="js/functions.js"></script>
+        <!-- /Apple --> 
+        <title>
+
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <link href="css/animation.css" rel="stylesheet" />
+
+
+        <script>
+            $(document).ready(function(){
+                $('.parallax').parallax();
+                $('select').material_select('destroy');
+
+                $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 240
+                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                });
+
+                $('.collapsible').collapsible();
+
+                $('.red').click(function(){
+                    setTimeout(function(){
+                        window.location="intro.html"}, 1);
+                });
+
+                $('.green').click(function(){
+                    setTimeout(function(){
+                        window.location="intro.html"}, 1);
+                });
+
+                $('.blue').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.fehler').click(function(){
+                    setTimeout(function(){
+                        window.location="fehler.html"}, 1);
+                });
+
+                $('.timepicker').pickatime({
+                    default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+                    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+                    twelvehour: false, // Use AM/PM or 24-hour format
+                    donetext: 'OK', // text for done-button
+                    cleartext: 'Clear', // text for clear-button
+                    canceltext: 'Cancel', // Text for cancel-button
+                    autoclose: false, // automatic close timepicker
+                    ampmclickable: true, // make AM PM clickable
+                    aftershow: function(){} //Function for after opening timepicker
+                });
+            });
+
+
+
+
+        </script>
+
+    </head>
+
+    <body bgcolor="#2c283f">
+
+        <!-- SideNav -->        
+        <ul id="slide-out" class="side-nav">
+            <li><div class="user-view">
+                <div class="background">
+                    <img src="images/design.jpg" width="400" height="200">
+                </div>
+                <a ><img class="circle" src="images/face.png"></a>
+                <a ><span class="white-text name">Sam Toorchi</span></a>
+                <a ><span class="white-text email">kommtnochk@mail.com</span></a>
+                </div></li>
+            <li><a class="fehler" style="cursor: pointer;"><i class="material-icons waves-effect">bug_report</i>Fehler melden</a></li>
+        </ul>
+        <!-- /SideNav -->
+
+        <!-- Parallax -->
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/design2.jpg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header">Fehler melden</h2>
+                <div class="row">
+                    <form class="col s12" action="mailto:someone@example.com" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input  id="first_name" type="text" class="validate" name="firstname">
+                                <label for="first_name" >Vorname</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate" name="name">
+                                <label for="last_name">Nachname</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate" name="email">
+                                <label for="email" data-error="überprüfen Sie Ihre E-Mail Adresse" data-success="right">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">watch_later</i>
+                                <input type="text" class="timepicker" name="clock">
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">note_add</i>
+                                        <textarea id="textarea1" class="materialize-textarea" name="text"></textarea>
+                                        <label for="textarea1">Ihre Meldung</label>
+                                    </div>
+                                
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                            <i class="material-icons right">send</i> 
+                                        </button>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/design2.jpg"></div>
+        </div>
+        <!-- /Parallax -->
+
+
+
+
+
+        <!-- MENU -->
+        <div class="fixed-action-btn horizontal click-to-toggle">
+            <a id="menu" class="btn-floating btn-large">
+                <i class="material-icons" style="background: #f3d178;">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">home</i></a></li>
+                <li><a class="btn-floating yellow darken-1 btn button-collapse" data-activates="slide-out"><i class="material-icons">perm_identity</i></a>    </li>
+                <li><a class="btn-floating blue"><i class="material-icons">clear</i></a></li>
+            </ul>
+        </div>
+        <div class="tap-target" data-activates="menu" materialize [materializeActions]="tapTargetActions">
+            <div class="tap-target-content">
+                <h5>Title</h5>
+                <p>A bunch of text</p>
+            </div>
+        </div>
+        <!-- /MENU -->
+
+    </body>
+</html>

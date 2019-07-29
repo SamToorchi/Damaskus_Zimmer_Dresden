@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Apple -->     
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="index,follow" name="robots" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <link href="images/logo1.jpg" rel="apple-touch-icon" />
+        <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+        <script src="js/functions.js"></script>
+
+        <!-- /Apple -->       
+        <title>
+            Daf
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="css/materialize.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <link href="css/animation.css" rel="stylesheet" />
+
+        <!-- Player -->
+        <link href="css/player.css" rel="stylesheet" />
+        <link href="css/animation.css" rel="stylesheet" />
+
+
+        <script>
+            $(document).ready(function() {
+                $('.tap-target').tapTarget('open');
+                $('.tap-target').tapTarget('close');
+
+                $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 240
+                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                });
+
+                $('.red').click(function(){
+                    setTimeout(function(){
+                        window.location="intro.html"}, 1);
+                });
+
+                $('.green').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.blue').click(function(){
+                    setTimeout(function(){
+                        window.location="index.html"}, 1);
+                });
+
+                $('.fehler').click(function(){
+                    setTimeout(function(){
+                        window.location="fehler.html"}, 1);
+                });
+
+                $('.brand-logo').click(function(){
+                    setTimeout(function(){
+                        window.location="musikstueck.html"}, 1);
+                });
+
+                $('.tar').click(function(){
+                    setTimeout(function(){
+                        window.location="tar.html"}, 1);
+                });
+
+                $('.oud').click(function(){
+                    setTimeout(function(){
+                        window.location="oud.html"}, 1);
+                });
+
+                $('.daf').click(function(){
+                    setTimeout(function(){
+                        window.location="daf.html"}, 1);
+                });
+
+                /*
+                $('.teal').click(function(){
+                    setTimeout(function(){
+                        window.location="playlist.html"}, 1);
+                });
+                */
+
+
+                $('.collapsible').collapsible();
+                $('.carousel').carousel();
+
+
+
+
+
+
+            });
+        </script>
+
+
+
+    </head>
+
+    <nav>
+        <div class="nav-wrapper" style="background: teal;">
+            <a class="brand-logo left"><i class="large material-icons">cancel</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="tar"><a>Tar</a></li>
+                <li class="oud"><a>Oud</a></li>
+                <li class="active daf"><a>Daf</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <body bgcolor="#2c283f" >
+
+        <!-- SideNav -->        
+        <ul id="slide-out" class="side-nav">
+            <li><div class="user-view">
+                <div class="background">
+                    <img src="images/design.jpg" width="400" height="200">
+                </div>
+                <a ><img class="circle" src="images/face.png"></a>
+                <a ><span class="white-text name">Sam Toorchi</span></a>
+                <a ><span class="white-text email">kommtnochk@mail.com</span></a>
+                </div></li>
+            <li><a class="fehler" style="cursor: pointer;"><i class="material-icons waves-effect">bug_report</i>Fehler melden</a></li>
+        </ul>
+        <!-- /SideNav -->
+
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="images/instrument1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="images/instrument4 Kopie.bmp"></a>
+            <a class="carousel-item" href="#three!"><img src="images/tari.jpg"></a>
+            <a class="carousel-item" href="#five!"><div class="player-one"></div></a>
+        </div>
+
+
+
+
+        <!-- Collapse -->
+        <ul class="collapsible" data-collapsible="accordion" style="background-color: white;">
+            <li>
+                <div class="collapsible-header active"><i class="material-icons">home</i>Herkunft</div>
+                <div class="collapsible-body"><span>Der früheste Beweis für den DAP (Daf) stammt aus Sassaniden-Iran. Der Name Pahlavi (eine alte iranische Sprache) der Daf ist dap. Das Wort daf ist daher die arabisierte Form des Wortes dap. Einige Bilder von dap wurden in Gemälden aus der Zeit vor der Zeitrechnung gefunden. Die Anwesenheit des iranischen Daphs in den Reliefs von Behistun deutet darauf hin, dass es vor dem Aufstieg des Islam existierte.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">build</i>Aufbau</div>
+                <div class="collapsible-body">
+                    <div class="dieseliste">
+                        <ul>
+                            <li><b style="font-size:20;">-</b> bestehen allgemein aus einem flachen kreisrunden, häufig aus Platanenholz</li>
+                            <li><b style="font-size:20;">-</b> Holzrahmen, der einseitig mit Ziegenfell oder Schaffell bespannt ist</li>
+                            <li><b style="font-size:20;">-</b> Der Durchmesser kann bis zu 60 Zentimeter oder mehr betragen</li>
+                        </ul>
+                    </div>
+                    <!-- 
+Es hat einen doppelschüsseligen Körper aus Maulbeer- oder Walnussholz mit einem Lammfell-Gesicht. Das Griffbrett hat 28 Bünde und die drei Doppelsaiten werden mit einem Plektrum aus Messing und Waben gespielt.
+-->
+
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">music_note</i>Klang</div>
+                <div class="collapsible-body"><span>  Bei Schlägen in der Mitte des Trommelfells entstehen die dunklen Töne. Je weiterer zum Rand hin die Schläge erfolgen, desto heller wird sie</span></div>
+            </li>
+        </ul>
+        <!-- /Collapse -->
+
+
+
+        <!-- MENU  
+        <div class="fixed-action-btn horizontal click-to-toggle">
+            <a id="menu" class="btn-floating btn-large">
+                <i class="material-icons" style="background: #f3d178;">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red" ><i class="material-icons">home</i></a></li>
+                <li><a class="btn-floating green" ><i class="material-icons">arrow_left</i></a></li>
+                <li><a class="btn-floating yellow darken-1 btn button-collapse" data-activates="slide-out"><i class="material-icons">perm_identity</i></a>    </li>
+                <li><a class="btn-floating blue" ><i class="material-icons">clear</i></a></li>
+            </ul>
+        </div>
+        <div class="tap-target" data-activates="menu" materialize [materializeActions]="tapTargetActions">
+            <div class="tap-target-content">
+                <h5>Title</h5>
+                <p>A bunch of text</p>
+            </div>
+        </div>
+         /MENU --> 
+
+        <script src="js/main.js"></script>
+    </body >
+</html>
